@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;1,300&family=DM+Sans:wght@300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- BANNER -->
+  <nav>
+    <a href="index.html" class="nav-logo">MATTHEW NICHOLS</a>
+    <ul class="nav-links">
+      <li><a href="pages/projects.html">Projects</a></li>
+      <li><a href="pages/research.html">Research</a></li>
+    </ul>
+  </nav>
+
+<!-- TITLE -->
+  <section id="title" class="title">
+    <h1>MATTHEW NICHOLS</h1>
+    <h4>Urban Planning Student at McGill University</h4>
+  </section>
+
+<!-- ABOUT -->
+<section id="about">
+	<div class="alignWithGrid">
+		<h2>ABOUT</h2>
+		<p> <br>Hello, I'm Matthew. I am an undergraduate urban planning and economics student at McGill with a passion for GIS, data analysis, and housing policy. On this website you can find information about myself and several projects I have worked on. If you have any questions or would like to reach out, my contact information is located at the bottom of each page.</p>
+	</div>
+</section>
+
+ <!-- RESUME -->
+ <section id="resume">
+  	<div class="resume-grid">  
+	    <div class="resume-header">
+    		<h2>RESUME</h2>
+    		<a href="content/Resume.pdf" download>
+    			<img src="content/download arrow.png" class="download-btn" alt="Download Resume" />
+			</a>
+	    </div>
+	    <div class="resume-blank"></div>
+
+	    <div class="resume-profile">  
+	    	<details>
+		    	<summary><h3>Profile ↓</h3></summary>
+		    	<div><p>Junior Urban Studies student at McGill University who is passionate about developing resilient and equitable urban spaces. Brings knowledge of programming / web development, GIS, and experience in coordinating and leading projects. <br>&nbsp</p></div>
+    		</details>
+		</div>
+
+		<div class="resume-skills">
+			<details>
+			    <summary><h3>Skills ↓</h3></summary>
+				<div><ul>
+				  <li>Experience performing data analysis in ArcGIS and Python</li>
+				  <li>Knowledge of JavaScript, HTML / CSS for creating websites from scratch</li>
+				  <li>Experience using Mapbox to create interactive web maps</li>
+				  <li>Experience with web scraping and location tracking, using real time data</li>
+				</ul></div>
+			</details>
+		</div>
+
+		<div class="resume-education">
+			<details>			
+				<summary><h3>Education ↓</h3></summary>
+				<div><h4>McGill University (2024-2027):</h4>
+				<p>Major: Geography (Urban Studies, Honors) <br>
+				Minor: Economics <br>
+				GPA: 3.60 <br>&nbsp<br>
+				Relevant Classes Taken:</p>
+				<ul>
+				  <li>Geography of the World Economy (GEOG 216): A</li>
+				  <li>Intro to Geo Information Science (GEOG 201): A-</li>
+				  <li> Cities in the Modern World (GEOG 217): A</li>
+				  <li>Intro to Coding (COMP 202): A</li>
+				  <li>Intro to Programming (COMP 250): B-</li>
+				  <li>Principles of the Geospatial Web (GEOG 384): A-</li>
+				  <li>Geospatial Analysis (GEOG 314): In Progress</li>
+				  <li>Geographic Thought and Practice (GEOG 381): In Progress</li>
+				  <li>Linear Algebra and Geometry (MATH 133): In Progress</li>
+				</ul>
+				<p>&nbsp</p>
+
+				<h4>James Madison High School (2020-2024):</h4>
+				<p>Weighted GPA: 4.2 <br>
+				Honors Graduate</p></div>
+			</details>
+		</div>
+
+		<div class="resume-experience">
+			<details>
+				<summary><h3>Experience ↓</h3></summary>
+				<div><h4>Job Experience:</h4>
+				<p>McGill University: Research Assistant for Dr. Gregory Weitzner (February 2026 - Present):</p>
+				<ul>
+				  <li>Data processing in python</li>
+				  <li>Exploratory data analysis</li>
+				</ul>
+				<p class="small">&nbsp</p>
+				<p>Roeder, Cochran, Phillips, PLLC: Litigation Document Review (June - August 2024:</p>
+				<ul>
+				  <li>Sorted emails into categories for future review</li>
+				</ul>
+				<p class="small">&nbsp</p>
+				<p>Safeway: Courtesy Clerk (January - June 2024):</p>
+				<ul>
+				  <li>Stocked, cleaned, helped customers, moved carts</li>
+				</ul>
+				<p>&nbsp</p>
+
+				<h4>Other Experience:</h4>
+				<p>Pollinator Garden - Eagle Scout Project (2023):</p>
+				<ul>
+				  <li>Coordinating with authorities and organizations</li>
+				  <li>Advertising and fundraising, working with donors</li>
+				  <li>Designing garden layout, creating diagrams and planning documents</li>
+				  <li>Leading a team of 30+ people, managing groups and timing</li>
+				</ul></div>
+			</details>
+		</div>
+	</div>
+</section>
+
+<!-- FOOTER -->
+  <footer>
+    <span>(703) 965 2596 &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  matthewnich015@outlook.com</span>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/matthew-nichols-441418328/">LinkedIn</a>
+      <a href="https://github.com/matthewnich015">GitHub</a>
+    </div>
+  </footer>
+
+
+  <script>
+  	// SMOOTH DROPDOWN
+	document.querySelectorAll('details').forEach(el => {
+	  const summary = el.querySelector('summary');
+	  const content = el.querySelector('summary + *');
+
+	  content.style.height = '0';
+	  content.style.overflow = 'hidden';
+	  content.style.transition = 'height 0.3s ease';
+
+	  summary.addEventListener('click', e => {
+	    e.preventDefault();
+	    if (el.open) {
+	      content.style.height = content.scrollHeight + 'px';
+	      requestAnimationFrame(() => requestAnimationFrame(() => {
+	        content.style.height = '0';
+	      }));
+	      content.addEventListener('transitionend', () => el.removeAttribute('open'), { once: true });
+	    } else {
+	      el.setAttribute('open', '');
+	      content.style.height = content.scrollHeight + 'px';
+	    }
+	  });
+	});
+  </script>
+</body>
+</html>
