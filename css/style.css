@@ -436,4 +436,8 @@ footer a:hover { color: var(--fg); }
     transform: translateY(0);
     pointer-events: auto;
   }
+
+  footer {
+    padding: 1.8rem 1rem;
+  }
 }
