@@ -357,3 +357,68 @@ footer a {
 footer a:hover { color: var(--fg); }
 
 .footer-links { display: flex; gap: 2rem; }
+
+
+/* MOBILE SETTINGS */
+@media (max-width: 768px) {
+  :root {
+    --nav-collapsed: 5vw;
+    --nav-expanded: 15vw;
+  }
+
+  .resume-grid {
+    grid-template-columns: 1fr;
+    margin: 0 1rem;
+  }
+
+  .project-carousel {
+    outline-width: 0.4rem;
+  }
+
+  .title {
+    padding-top: 4rem;
+  }
+
+  section {
+    padding: 1.5rem 1rem;
+  }
+
+  .alignWithGrid {
+    margin: 0 1rem;
+  }
+
+  h2 {
+    font-size: clamp(1.2rem, 6vw, 2.4rem);
+  }
+
+  h3 {
+    font-size: clamp(0.9rem, 5vw, 1.5rem);
+  }
+
+  h4 {
+    font-size: clamp(0.8rem, 5vw, 1.2rem);
+  }
+
+  .carousel-btn {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .project-carousel-wrapper {
+    width: 80vw;
+  }
+
+  .project-card {
+    width: 80vw;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+
+  .card-tags {
+    padding-left: 1rem;
+  }
+
+  .card-title {
+    margin-left: 1rem;
+  }
+}
