@@ -215,7 +215,10 @@ section + section { border-top: 1px solid rgba(26,26,24,0.08); }
   width: 2rem;
   transition: transform 0.2s ease;
   margin-top: 1.5rem;
+  margin-right: 1.5rem;
 }
+
+.alignWithGrid a { text-decoration: none; }
 
 .download-btn:hover {
   transform: scale(1.2);
